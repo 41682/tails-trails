@@ -8,7 +8,7 @@ function App() {
   
   useEffect(() => {
     //fetchでバックエンドExpressのサーバーを指定
-    fetch('http://localhost:3001/api')
+    fetch('/api')
       //レスポンスをjsonとして受け取りjsオブジェクトを生成
       .then((res) => res.json())
       //生成したjsオブジェクトをdataに代入
